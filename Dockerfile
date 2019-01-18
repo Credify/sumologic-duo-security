@@ -4,6 +4,8 @@ LABEL maintainer=devops@upgrade.com
 USER root
 
 RUN amazon-linux-extras install python3 -y && pip3 install six botocore && yum clean all
+
+USER upgrade
 ADD . /opt/sumologic-duo-security/
 
 WORKDIR /opt/sumologic-duo-security
