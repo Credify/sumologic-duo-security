@@ -61,7 +61,7 @@ def format_admin_logs(data):
             i['description'] = json.loads(i['description'])
             if('device' in i['description']):
                 i['description']['device'] = "*****"
-            elif ('phones' in i['description'] ):
+            elif i['description'].get['phones']:
                 for ph in (i['description']['phones']):
                     i['description']['phones'][ph]['number'] = "*****"
             elif ('phone' in i['description'] ):
