@@ -61,7 +61,7 @@ def format_admin_logs(data):
             i['description'] = json.loads(i['description'])
             if('device' in i['description']):
                 i['description']['device'] = "*****"
-            elif i['description'].get['phones']:
+            elif i['description'].get('phones'):
                 for ph in (i['description']['phones']):
                     i['description']['phones'][ph]['number'] = "*****"
             elif ('phone' in i['description'] ):
@@ -82,7 +82,7 @@ def format_admin_logs(data):
 def dump_logs(data):
     print('dumping logs')
     r = requests.post(url=collector_url, data=data)
-    tries = 10
+    tries = 30
     while r.status_code != 200:
         if tries <= 0:
             raise Exception('Excessive retries. Issue in posting log data.')
