@@ -1,4 +1,4 @@
-FROM docker-upgrade.artifactory.build.upgrade.com/python-base:2.0.20200722.0-215.3.7-224
+FROM docker-upgrade.artifactory.build.upgrade.com/python-base:2.0.20210126.0-216.3.7-225
 LABEL maintainer=devops@upgrade.com
 
 USER root
