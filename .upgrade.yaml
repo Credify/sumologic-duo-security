@@ -15,6 +15,7 @@
 "primaryOwners":
 - "team:review-devops"
 - "team:review-corp"
+"pullRequestReviewSlackChannel": null
 "qaOwners": null
 "service": null
 "upgradeableBranches": null
