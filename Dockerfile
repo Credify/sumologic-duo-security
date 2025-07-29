@@ -1,4 +1,4 @@
-FROM 118455887602.dkr.ecr.us-west-2.amazonaws.com/releases/images/python-base-2023:20250726101949-e9bc9109
+FROM 118455887602.dkr.ecr.us-west-2.amazonaws.com/releases/images/python-base-2023:20250728135638-caf152ef
 LABEL maintainer=devops@upgrade.com
 
 USER root
